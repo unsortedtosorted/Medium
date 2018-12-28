@@ -10,7 +10,6 @@ class Solution:
         def search(l,r):
             
             i[0]+=1
-            print (i)
             mid=(l+r)//2
             
 
@@ -38,6 +37,9 @@ class Solution:
                     else:
                         r=mid-1
                         return search(l,r)
+                else:
+                    return nums[mid]
+                        
             return nums[mid]
         
         
